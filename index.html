@@ -5,7 +5,49 @@
     <title>Simple Music App</title>
   </head>
   <body>
-      <h1>This is my simple music app</h1>
-      <script src="script.js"></script> 
+      <div id="album-header">
+        <img
+          src="https://townsquare.media/site/812/files/2020/05/Illustrated-album-covers.jpg?w=1200"
+          style= "width:90em; height:30em;"
+          alt="album-header"
+        />
+        <h1 id="title">The Album Aesthetic</h1>
+      </div>
+      <div id="editors-pick">
+          <span>Album Name</span>
+          <span>Album Name</span>
+          <span>Album Name</span>
+          <span>Album Name</span>
+          <span>Album Name</span>         
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Album Name">
+        <button>Search</button>
+      </div>
+
+      
+
+      <div id="album-collection">
+          <ul id="album-container">
+              <li class='card'>Place Holder</li>
+              <li class='card'>Place Holder</li>
+              <li class='card'>Place Holder</li>
+              <li class='card'>Place Holder</li>
+              <li class='card'>Place Holder</li>
+          </ul>
+      </div>
+
+      <div id="submit">
+          <form>
+              <input id="album-name" type="text" placeholder="Album Name">
+              <input id="artist-name" type="text" placeholder="Artist">
+              <div>
+              <input id="cover-url" type="text" placeholder="Cover Url">
+              <button>Submit Album</button>
+            </div>
+          </form>
+      </div>
   </body>
+  <script src="script.js"></script> 
 </html>
