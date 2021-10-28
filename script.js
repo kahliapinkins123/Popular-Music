@@ -111,7 +111,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     }
                 }           
         ]
-
         createCards(editorsAlbums);  
     });
 
@@ -128,7 +127,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             albumContainer.appendChild(li);
         } else{
             createCards(favoritesArray);
-
         }
     });
 
