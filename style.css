@@ -55,6 +55,21 @@ body {
   background-color: #fa9ffa;
   border: black solid 1px;
   color: rgb(194, 0, 58);
+  width: 300px;
+}
+
+.link-button{
+  background-color: #fa9ffa;
+  border: black solid 1px;
+  color: rgb(194, 0, 58);
+  width: 80px;
+  margin-left: 300px;
+  margin-top: -.25rem;  
+}
+
+a:link{
+  text-decoration: none;
+  color:rgb(80, 5, 87);
 }
 
 form{

@@ -15,23 +15,24 @@
       </div>
 
       <div id="top-bar">
-          <span class='top-bar-choices' style='color: white;' id='full-list'>FULL LIST</span>
-          <span class='top-bar-choices' style='color: white;' id='editors-choice'>EDITOR'S CHOICE</span>
+          <span class='top-bar-choices' style='color: white;' id='full-list'>SONGS</span>
+          <span class='top-bar-choices' style='color: white;' id='editors-choice'>ALBUMS</span>
           <span class='top-bar-choices' style='color: white;' id='favorites'>MY FAVORITES</span>        
       </div>
 
       <div id="album-collection">
-          <h2 class='heading'>Full List</h2>
+          <h2 class='heading'>Song List</h2>
           <ul id="album-container"></ul>
       </div>
 
       <div id="submit">
         <form>
-          <p style='color: rgb(247, 55, 113);'>Don't see your fave album? Add one here!</p>
+          <p id='form-title' style='color: rgb(247, 55, 113);'>Don't see your fave song? Add one here!</p>
             <input id="album-name" class='input' type="text" placeholder="Album Name">
             <input id="artist-name" class='input' type="text" placeholder="Artist">
             <div>
-            <input id="cover-url" class='input' type="text" placeholder="Cover Url">
+            <input id="cover-url" class='input' type="text" placeholder="Cover Art Url">
+            <input id="song-url" class='input' type='text' placeholder="Song Url">
             <button class='input-button'>Submit Album</button>
           </div>
         </form>
