@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let fullList = document.querySelector('#full-list');
     let editorsChoice = document.querySelector('#editors-choice');
     let favorites = document.querySelector('#favorites');
-    let searchBtn = document.querySelector('#search-button');
     let heading = document.querySelector('.heading');
-    let input = document.querySelector('#search-input');
     let favoritesArray = [];
 
-    function fetchSongs(){
+    fetchAlbums();
+
+    function fetchAlbums(){
         fetch("https://shazam.p.rapidapi.com/charts/track?locale=en-US&pageSize=20&startFrom=0", 
         {
         "method": "GET",
@@ -23,10 +23,51 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
     }
 
-    fetchSongs();
+    function createCards(albums){
+        for(const album of albums){
+            let li = document.createElement('li');
+            let img = document.createElement('img');
+            let faveBtn = document.createElement('BUTTON');
+            
+            img.src = album['images']['coverart'];
+            faveBtn.textContent = 'Favorite';
+             
+            li.appendChild(img); 
+            li.appendChild(faveBtn);
+
+            faveBtn.className = 'fave-button';
+            img.className = 'card-image';
+            li.className = 'card';
+
+            albumContainer.appendChild(li);
+
+            faveBtn.addEventListener('click',()=>{
+                if(faveBtn.textContent == 'Favorite'){
+                    faveBtn.textContent = 'Favorited!'
+                    faveBtn.style.color = 'pink';
+                    faveBtn.style.background = 'black';
+                                 
+                    favoritesArray.push(album);
+                    console.log(favoritesArray);
+                } else{
+                    faveBtn.textContent = 'Favorite'
+                    faveBtn.style.color = 'rgb(194, 0, 58)';
+                    faveBtn.style.background = '#fa9ffa';
+                }
+            })
+
+            img.addEventListener('click',()=>{
+                alert(`This is ${album['title']} by ${album['subtitle']}.`);    
+            });
+        }
+    }
     
-    
-    
+    fullList.addEventListener('click',()=>{ 
+        heading.textContent = "Full List";
+        albumContainer.innerHTML = "";
+
+        fetchAlbums();
+    });
 
     editorsChoice.addEventListener('click',()=>{
         albumContainer.innerHTML = "";
@@ -68,88 +109,22 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     images: {
                         coverart: 'https://i.pinimg.com/originals/2f/60/0d/2f600dcdcdf907a363da3e22fb21a4ad.jpg'
                     }
-                }
-            
+                }           
         ]
 
-        createCards(editorsAlbums);
-  
-    });
-
-    
-
-    
-
-    //Create each card (will pass an object and replace Beyonce stuff w API stuff)
-    function createCards(albums){
-        for(const album of albums){
-            let li = document.createElement('li');
-            let img = document.createElement('img');
-            let faveBtn = document.createElement('BUTTON');
-            
-            
-
-            img.src = album['images']['coverart'];
-            faveBtn.textContent = 'Favorite';
-            
-            
-            
-            li.appendChild(img); 
-            li.appendChild(faveBtn);
-
-            faveBtn.className = 'fave-button';
-            img.className = 'card-image';
-
-            li.className = 'card';
-
-            albumContainer.appendChild(li);
-
-            faveBtn.addEventListener('click',()=>{
-                if(faveBtn.textContent == 'Favorite'){
-                    faveBtn.textContent = 'Favorited!'
-                    faveBtn.style.color = 'pink';
-                    faveBtn.style.background = 'black';
-                    
-                    //patch onto list of faves
-                    favoritesArray.push(album);
-                    console.log(favoritesArray);
-                }
-                else{
-                    faveBtn.textContent = 'Favorite'
-                    faveBtn.style.color = 'rgb(194, 0, 58)';
-                    faveBtn.style.background = '#fa9ffa';
-                    //delete from list of faves
-                }
-            })
-
-            img.addEventListener('click',()=>{
-                alert(`This is ${album['title']} by ${album['subtitle']}.`);    
-            });
-        }
-
-    }
-
-
-    
-
-    fullList.addEventListener('click',()=>{ 
-        heading.textContent = "Full List";
-        albumContainer.innerHTML = "";
-
-        fetchSongs();
+        createCards(editorsAlbums);  
     });
 
     favorites.addEventListener('click',()=>{
         heading.textContent = "My Favorites";
         albumContainer.innerHTML = "";
-        //display patched list of faves
-        //create new array of albums
-        //if status is favorited, push onto array of albums
-        //display array of albums
+
         if(favoritesArray.length === 0){
             let li = document.createElement('li');
+
             li.textContent = "You haven't favorited anything yet!"
-            li.style.color = 'rgb(247, 55, 113)';
+            li.style.color = 'rgb(240, 42, 101)';
+
             albumContainer.appendChild(li);
         } else{
             createCards(favoritesArray);
@@ -175,8 +150,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         createCards(newAlbum);
         title.value ='';
         subtitle.value ='';
-        coverUrl.value ='';
-        
-    })
-    
+        coverUrl.value ='';       
+    })   
 })

@@ -1,28 +1,70 @@
 body {
-    background: #fa9ffa;
-  }
+  background: #fa9ffa;
+}
 
 #title{
-    color: rgb(247, 55, 113);
+  color: rgb(247, 55, 113);
     
 }
 
-#album-container{
-    margin:2rem;
-    list-style-type: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+#top-bar {
+  height: 15vh;
+  background: rgb(240, 42, 101);
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
 }
 
-#top-bar {
-    height: 15vh;
-    background: rgb(240, 42, 101);
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
+.heading{
+  
+  color:white; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
+
+#album-container{
+  margin:2rem;
+  list-style-type: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.card {
+  text-align: center;
+  border: rgb(80, 5, 87) solid 1px;
+  padding: 2rem;
+  width: 25rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px rgb(247, 55, 113);
+  
+  
+}
+
+.card-image{
+  text-align: 'center';
+  width: 28rem;
+  height: 28rem;
+  margin: -2.7rem -2.7rem;  
+}
+
+.fave-button{
+  margin: 1rem 1rem;
+  margin-bottom: -1rem;
+  margin-top: 2.85rem;
+  background-color: #fa9ffa;
+  border: black solid 1px;
+  color: rgb(194, 0, 58);
+}
+
+form{
+  display: inline-grid;
+  background-color: #f388f3;
+  }
 
 .input-button{
   color: rgb(240, 42, 101);
@@ -38,47 +80,3 @@ body {
   color:rgb(240, 42, 101);
   opacity: 0.5;
 }
-
-.heading{
-  
-   color:white; 
-   margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.card {
-    text-align: center;
-    border: rgb(80, 5, 87) solid 1px;
-    padding: 2rem;
-    width: 25rem;
-    height: 25rem;
-    display: inline-grid;
-    margin: 1rem 2rem;
-    box-shadow: 3px 4px rgb(247, 55, 113);
-    
-    
-  }
-
-  .card-image{
-      text-align: 'center';
-      width: 28rem;
-      height: 28rem;
-      margin: -2.7rem -2.7rem;  
-  }
-  
-
-  .fave-button{
-    margin: 1rem 1rem;
-    margin-bottom: -1rem;
-    margin-top: 2.85rem;
-    background-color: #fa9ffa;
-    border: black solid 1px;
-    color: rgb(194, 0, 58);
-  }
-
-  form{
-    display: inline-grid;
-    /*border: black solid 1.5px;*/
-    background-color: #f388f3;
-  }
