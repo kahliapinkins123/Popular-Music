@@ -9,6 +9,7 @@
 <div align="center">
 
   <h3 align="center">Music App</h3>
+  <img width="1372" alt="Capture d’écran 2023-12-07 à 14 03 37" src="https://github.com/kahliapinkins123/Simple-Music-App/assets/87428634/6fd72ea9-4424-4efc-897d-4e63571285c1">
 
   <p align="center">
     A website that displays the world's most popular songs and albums!
@@ -52,7 +53,10 @@ This is an application built with Javascript that displays detailed information 
 
 ### Built With
 
-* [React.js](https://reactjs.org/)
+* Javascript
+* CSS
+* HTML
+* API
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
