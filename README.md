@@ -8,7 +8,7 @@
 <br />
 <div align="center">
 
-  <h3 align="center">Music App</h3>
+  <h3 align="center">Popular Music Web Application</h3>
   <img width="1372" alt="Capture d’écran 2023-12-07 à 14 03 37" src="https://github.com/kahliapinkins123/Simple-Music-App/assets/87428634/6fd72ea9-4424-4efc-897d-4e63571285c1">
 
   <p align="center">
