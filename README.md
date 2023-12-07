@@ -8,11 +8,14 @@
 <br />
 <div align="center">
 
-  <h3 align="center">Popular Music Web Application</h3>
+  <h3 align="center">Popular Music Application</h3>
+  
   <img width="1372" alt="Capture d’écran 2023-12-07 à 14 03 37" src="https://github.com/kahliapinkins123/Simple-Music-App/assets/87428634/6fd72ea9-4424-4efc-897d-4e63571285c1">
 
   <p align="center">
-    A website that displays the world's most popular songs and albums!
+    <br />
+    A website where you can find and listen to the world's most popular songs and albums!
+    <br />
     <br />
     <a href="https://medium.com/@kpinkin1/javascript-event-listeners-da4ecd62bd59"><strong>Javascript Blog Post »</strong></a>
     <br />
@@ -42,7 +45,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is an application built with Javascript that displays detailed information about popular music albums from Shazam's most popular music API. It implements several funtions from Javascript, such as Event Listeners, retrieving elements from the DOM, a submit function and many more. Using Javascript's many functions, I've created a user-friendly and dynamic app. This application also includes a backend db.json that is being fetched from Shazam in my application.
+This is an application built with Javascript that displays detailed information about popular music from Shazam's Music API. It implements several functions from Javascript, such as Event Listeners, retrieving elements from the DOM, a submit function and many more. Using Javascript's many faculties, I've created a user-friendly and dynamic app to find and listen to popular music. This application also includes a backend db.json that is being fetched from Shazam in my application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
