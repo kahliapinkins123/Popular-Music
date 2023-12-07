@@ -42,10 +42,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-
-
-This is an application built with Javascript that displays detailed information about popular music albums from an API. It implements several funtions from Javascript, such as Event Listeners, retrieving elements from the DOM, a submit function and many more. Using Javascript's many functions, I've created a user-friendly and dynamic app. This application also includes a backend db.json that is being fetched from      in my application.
+This is an application built with Javascript that displays detailed information about popular music albums from Shazam's most popular music API. It implements several funtions from Javascript, such as Event Listeners, retrieving elements from the DOM, a submit function and many more. Using Javascript's many functions, I've created a user-friendly and dynamic app. This application also includes a backend db.json that is being fetched from Shazam in my application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
