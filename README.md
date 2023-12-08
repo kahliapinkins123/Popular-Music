@@ -45,7 +45,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is an application built with Javascript that displays detailed information about popular music from Shazam's Music API. It implements several functions from Javascript, such as Event Listeners, retrieving elements from the DOM, a submit function and many more. Using Javascript's many faculties, I've created a user-friendly and dynamic app to find and listen to popular music. This application also includes a backend db.json that is being fetched from Shazam in my application.
+This is an application built with Javascript that displays detailed information about popular music from Shazam's Music API. It implements several functions from Javascript, including Event Listeners, retrieving and modifying elements from the DOM, submitting new elements to the DOM, and many more. Using Javascript's many faculties, I've created a user-friendly and dynamic app to find and listen to popular music. This application also includes a backend db.json that is being fetched from a Shazam API.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -92,6 +92,7 @@ Project Link: [https://github.com/kahliapinkins123/Simple-Music-App](https://git
 
 These are my sources!
 
+*  [Shazam API](https://rapidapi.com/apidojo/api/shazam)
 * [Header]( https://wallpaperaccess.com/awesome-cool-anime)
 * [NavBar CSS](https://www.w3schools.com/howto/howto_js_topnav.asp)
 * [Button CSS](https://www.w3schools.com/css/css3_buttons.asp)
